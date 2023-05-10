@@ -1,0 +1,38 @@
+id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+targa VARCHAR(10) UNIQUE NOT NULL,
+marca VARCHAR(30) NOT NULL,
+modello VARCHAR(30) NOT NULL,
+anno_produzione YEAR NOT NULL,
+prezzo INT UNSIGNED NOT NULL,
+sconto DECIMAL(8, 2),
+chilometraggio INT UNSIGNED ,
+tipo_carburante VARCHAR(15) NOT NULL,
+cilindrata INT UNSIGNED NOT NULL,
+kilowatt (kW) INT UNSIGNED NOT NULL,
+colore VARCHAR(20) NOT NULL,
+numero_porte TINYINT UNSIGNED,
+tipo_cambio VARCHAR(15),
+disponibilita TINYINT DEFAULT 1,
+descrizione TEXT,
+foto TEXT DEFAULT "/qualche/img"
+
+
+//PER OLGA CHE LO VOLEVA IN RUSSO //
+(  e copia incollato da quello sopra :3)
+Идентификатор INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+номер_регистрации VARCHAR(10) UNIQUE NOT NULL,
+марка VARCHAR(30) NOT NULL,
+модель VARCHAR(30) NOT NULL,
+год_производства YEAR NOT NULL,
+цена INT UNSIGNED NOT NULL,
+скидка DECIMAL(8, 2),
+пробег INT UNSIGNED ,
+тип_топлива VARCHAR(15) NOT NULL,
+объем_двигателя INT UNSIGNED NOT NULL,
+Киловатт (кВт) INT UNSIGNED NOT NULL,
+цвет VARCHAR(20) NOT NULL,
+количество_дверей TINYINT UNSIGNED,
+тип_коробки_передач VARCHAR(15),
+наличие TINYINT DEFAULT 1,
+описание TEXT,
+фото TEXT DEFAULT "/qualche/img"
